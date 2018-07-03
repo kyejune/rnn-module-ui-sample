@@ -1,0 +1,22 @@
+{
+  "name": "rnn-module-ui-sample",
+  "version": "1.0.0",
+  "description": "react-native ui모듈 테스트",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyejune/rnn-module-ui-sample.git"
+  },
+  "keywords": [
+    "rnn"
+  ],
+  "author": "kyejune Hong <hohoyaing@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyejune/rnn-module-ui-sample/issues"
+  },
+  "homepage": "https://github.com/kyejune/rnn-module-ui-sample#readme"
+}
