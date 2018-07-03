@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/kyejune/rnn-module-ui-sample/issues"
   },
-  "homepage": "https://github.com/kyejune/rnn-module-ui-sample#readme"
+  "homepage": "https://github.com/kyejune/rnn-module-ui-sample#readme",
+  "dependencies": {}
 }
