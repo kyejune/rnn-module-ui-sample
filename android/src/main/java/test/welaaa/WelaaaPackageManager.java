@@ -1,4 +1,4 @@
-package com.eegoma.RNAudioPlayer;
+package test.welaaa;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

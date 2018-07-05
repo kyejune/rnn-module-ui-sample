@@ -1,4 +1,4 @@
-package com.eegoma.RNAudioPlayer;
+package test.welaaa;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
