@@ -1,18 +1,20 @@
-//import { NativeModules } from 'react-native';
 import PropTypes from 'prop-types';
-import {requireNativeComponent, ViewPropTypes} from 'react-native';
+import {requireNativeComponent, ViewPropTypes, NativeModules} from 'react-native';
 
-var iface = {
+
+
+let iface = {
     name: 'ImageView',
     propTypes: {
         src: PropTypes.string,
-        borderRadius: PropTypes.number,
-        resizeMode: PropTypes.oneOf(['cover', 'contain', 'stretch']),
         ...ViewPropTypes, // include the default view properties
     },
 };
 
-module.exports = requireNativeComponent('RCTImageView', iface);
+module.exports = {
+    RNAudioPlayerModule: NativeModules.RNAudioPlayer,
+    ImageView: requireNativeComponent('RImageViewSample', iface)
+};
 
 
-// module.exports = NativeModules.RNAudioPlayer;
+module.exports = NativeModules.RNAudioPlayer;

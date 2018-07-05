@@ -10,8 +10,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class RNAudioPlayerPackage implements ReactPackage {
+public class WelaaaPackageManager implements ReactPackage {
 
+    /* 모듈 등록 */
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
@@ -21,9 +22,14 @@ public class RNAudioPlayerPackage implements ReactPackage {
         return modules;
     }
 
+
+    /* UI 모듈 등록 */
     @Override
-    public List<ViewManager> createViewManagers(
-            ReactApplicationContext reactContext) {
-        return Collections.emptyList();
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+        List<NativeModule> modules = new ArrayList<>();
+
+        modules.add(new ReactImageManager);
+
+        return modules;
     }
 }
