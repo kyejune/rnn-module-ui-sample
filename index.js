@@ -12,6 +12,6 @@ let iface = {
 };
 
 module.exports = {
-    RNAudioPlayerModule: NativeModules.RNAudioPlayer,
+    RNAudioPlayer: NativeModules.RNAudioPlayer,
     ImageView: requireNativeComponent('RImageViewSample', iface)
 };

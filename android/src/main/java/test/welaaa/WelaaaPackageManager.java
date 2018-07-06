@@ -7,6 +7,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -26,10 +27,10 @@ public class WelaaaPackageManager implements ReactPackage {
     /* UI 모듈 등록 */
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new ReactImageManager);
+        return Arrays.<ViewManager>asList(
+          new ReactImageManager()
+        );
 
-        return modules;
     }
 }
